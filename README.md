@@ -66,3 +66,79 @@ h1 {...}
     <h1>Judul 2 (biru karena ada dalam #intro)</h1>
 </div>
 ````
+### 3. Urutan Prioritas (Internal, Eksternal, Inline CSS)
+
+Urutan prioritas CSS:
+
+Inline CSS → style langsung di elemen → paling kuat
+
+Internal CSS → di dalam <style> pada file HTML
+
+Eksternal CSS → di file .css terpisah
+
+👉 Kalau ada konflik, maka Inline > Internal > Eksternal.
+
+Contoh:
+```
+<head>
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS -->
+    <p style="color: red;">Teks ini berwarna merah (inline lebih kuat)</p>
+</body>
+```
+
+📌 Hasil: Teks jadi merah, walaupun internal biru & eksternal misalnya hijau.
+
+### 4. Jika Elemen Punya ID dan Class (Siapa Menang?)
+
+👉 Urutan spesifisitas selector CSS:
+
+Inline Style (terkuat)
+
+ID Selector (#id) lebih kuat daripada
+
+Class Selector (.class) lebih kuat daripada
+
+Elemen selector (p, h1, div)
+
+Contoh:
+````
+<style>
+    p {
+        color: green;
+    }
+
+    .text-paragraf {
+        color: blue;
+    }
+
+    #paragraf-1 {
+        color: red;
+    }
+</style>
+
+<p id="paragraf-1" class="text-paragraf">
+    Ini paragraf contoh
+</p>
+````
+
+📌 Hasil: Paragraf akan berwarna merah, karena ID lebih kuat daripada Class maupun selector elemen p.
+
+✅ Jadi kesimpulannya:
+
+h1 berlaku umum, #intro h1 lebih spesifik.
+
+Prioritas CSS: Inline > Internal > Eksternal.
+
+ID lebih kuat dari Class.
+
