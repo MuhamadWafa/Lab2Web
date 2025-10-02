@@ -38,7 +38,6 @@
 ````
 
 ### 2. Perbedaan h1 {...} dengan #intro h1 {...}
-
 h1 {...}
 Semua elemen <h1> di halaman akan mendapatkan style tersebut.
 (Selector global untuk semua h1).
@@ -46,6 +45,7 @@ Semua elemen <h1> di halaman akan mendapatkan style tersebut.
 #intro h1 {...}
 Hanya elemen <h1> yang berada di dalam elemen dengan id="intro" yang akan terkena style.
 (Selector spesifik ke elemen tertentu).
+
 
 ```
 <style>
