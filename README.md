@@ -8,7 +8,7 @@
 
 ### 1. Eksperimen CSS dengan CSS Cheat Sheet
 
-///
+```
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -35,5 +35,4 @@
     <p>Belajar CSS jadi lebih mudah kalau sambil praktik.</p>
 </body>
 </html>
-
-////
+````
