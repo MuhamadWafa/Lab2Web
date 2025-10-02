@@ -8,7 +8,7 @@
 
 ### 1. Eksperimen CSS dengan CSS Cheat Sheet
 
-Kamu bisa coba menambahkan/mengubah properti CSS dari sebuah elemen HTML. Contoh sederhana:
+/
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -35,3 +35,5 @@ Kamu bisa coba menambahkan/mengubah properti CSS dari sebuah elemen HTML. Contoh
     <p>Belajar CSS jadi lebih mudah kalau sambil praktik.</p>
 </body>
 </html>
+
+////
