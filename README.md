@@ -41,7 +41,6 @@
 
 Semua elemen di halaman akan mendapatkan style tersebut.
 (Selector global untuk semua h1).
-
 Hanya elemen yang berada di dalam elemen dengan id="intro" yang akan terkena style.
 (Selector spesifik ke elemen tertentu).
 
@@ -68,15 +67,10 @@ Hanya elemen yang berada di dalam elemen dengan id="intro" yang akan terkena sty
 ### 3. Urutan Prioritas (Internal, Eksternal, Inline CSS)
 
 Urutan prioritas CSS:
-
 Inline CSS → style langsung di elemen → paling kuat
-
 Internal CSS → di dalam <style> pada file HTML
-
 Eksternal CSS → di file .css terpisah
-
 👉 Kalau ada konflik, maka Inline > Internal > Eksternal.
-
 Contoh:
 ```
 <head>
@@ -99,17 +93,11 @@ Contoh:
 📌 Hasil: Teks jadi merah, walaupun internal biru & eksternal misalnya hijau.
 
 ### 4. Jika Elemen Punya ID dan Class (Siapa Menang?)
-
 👉 Urutan spesifisitas selector CSS:
-
 Inline Style (terkuat)
-
 ID Selector (#id) lebih kuat daripada
-
 Class Selector (.class) lebih kuat daripada
-
 Elemen selector (p, h1, div)
-
 Contoh:
 ````
 <style>
@@ -134,10 +122,7 @@ Contoh:
 📌 Hasil: Paragraf akan berwarna merah, karena ID lebih kuat daripada Class maupun selector elemen p.
 
 ✅ Jadi kesimpulannya:
-
 h1 berlaku umum, #intro h1 lebih spesifik.
-
 Prioritas CSS: Inline > Internal > Eksternal.
-
 ID lebih kuat dari Class.
 
