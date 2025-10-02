@@ -36,3 +36,33 @@
 </body>
 </html>
 ````
+
+### 2. Perbedaan h1 {...} dengan #intro h1 {...}
+
+h1 {...}
+→ Semua elemen <h1> di halaman akan mendapatkan style tersebut.
+(Selector global untuk semua h1).
+
+#intro h1 {...}
+→ Hanya elemen <h1> yang berada di dalam elemen dengan id="intro" yang akan terkena style.
+(Selector spesifik ke elemen tertentu).
+
+```
+<style>
+    h1 {
+        color: red;
+    }
+
+    #intro h1 {
+        color: blue;
+    }
+</style>
+
+<div>
+    <h1>Judul 1 (merah)</h1>
+</div>
+
+<div id="intro">
+    <h1>Judul 2 (biru karena ada dalam #intro)</h1>
+</div>
+````
